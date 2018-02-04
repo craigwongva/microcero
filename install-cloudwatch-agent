@@ -1,0 +1,4 @@
+TMP=/tmp/install-cloudwatch-agent
+
+wget https://s3.amazonaws.com/aws-cloudwatch/downloads/awslogs-agent-setup-v1.0.py &> $TMP-1000
+sudo python ./awslogs-agent-setup-v1.0.py --region us-west-2                       &> $TMP-1100
