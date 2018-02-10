@@ -1,5 +1,6 @@
 import javax.servlet.*
 import java.util.jar.*
+import java.text.*
 
 class BootStrap {
 
@@ -8,7 +9,10 @@ class BootStrap {
         Manifest manifest = new Manifest(inputStream);
         Attributes secondaryAttributes = manifest.getAttributes("Grails Application")
         String sha =  secondaryAttributes.getValue('Implementation-Build-Number')
-        println "i-000000000000 is running sha $sha"
+
+        String ii = "curl 169.254.169.254/latest/meta-data/instance-id".execute().text
+        SimpleDateFormat format=new SimpleDateFormat ("yyyy-MM-dd:HH:mm:ss.SSS");
+        println "candlestick ${format.format(new Date())} $ii $sha"
     }
 
     def destroy = {
