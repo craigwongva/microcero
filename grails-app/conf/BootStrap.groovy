@@ -12,7 +12,7 @@ class BootStrap {
 
         String ii = "curl 169.254.169.254/latest/meta-data/instance-id".execute().text
         SimpleDateFormat format=new SimpleDateFormat ("yyyy-MM-dd:HH:mm:ss.SSS");
-        println "candlestick ${format.format(new Date())} $ii $sha"
+        println "candlestick microcero $sha $ii ${format.format(new Date())}"
     }
 
     def destroy = {
