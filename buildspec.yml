@@ -15,14 +15,14 @@ phases:
       - echo Hello, CodeBuild Build!
       - pwd
       - ls
-      - /usr/local/share/grails-2.4.0/bin/grails war ./craig.war > mito
-      - ls
-     
+#      - /usr/local/share/grails-2.4.0/bin/grails war ./craig.war > mito
+#      - ls
+       - mvn grails:war
+    
   post_build:
     commands:
       - echo Hello, CodeBuild PostBuild!
       - ls
-      - cat mito
 
 
 artifacts:
