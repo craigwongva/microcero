@@ -1,2 +1,5 @@
+#CodeBuild's ubuntu comes with java automatically (if java 8 is the chosen environment), 
+# so this file isn't executed by me.
+#
 sudo apt-get install openjdk-8-jdk
 JAVA_HOME=/usr

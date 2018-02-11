@@ -15,8 +15,10 @@ phases:
       - pwd
       - ls
       - aws --version
-#      - ./codebuild-ubuntu/install-java
       - java -version
+      - ./codebuild-ubuntu/install-grails
+      - grails -version
+
 
 #artifacts:
 #  files:
