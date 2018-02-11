@@ -1,6 +1,7 @@
 aws s3 cp s3://redf4rth-root/gocontainer/dotsdkman-grails.zip . 
 sudo apt install unzip
 unzip dotsdkman-grails.zip
+/bin/bash
 . .sdkman/bin/sdkman-init.sh
 sdk install grails 2.4.0
 
