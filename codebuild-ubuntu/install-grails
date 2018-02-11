@@ -1,22 +1,2 @@
-#aws s3 cp s3://redf4rth-root/gocontainer/dotsdkman-grails.zip . 
-#sudo apt install unzip
-#unzip dotsdkman-grails.zip
-#MY_HERE=`pwd`
-#
-##sed -i 's/HOME/$1/' codebuild-ubuntu/sdkman-init.sh
-##cat codebuild-ubuntu/sdkman-init.sh
-#cp codebuild-ubuntu/sdkman-init.sh .sdkman/bin/
-#
-##Use homegrown version of next line, because CodeBuild's ubuntu doesn't grok `#!/bin/bash`
-##. .sdkman/bin/sdkman-init.sh
-#echo hello brown pillow
-#/bin/bash .sdkman/bin/sdkman-init.sh `pwd`
-
-#doesn't work on ubuntu (it does nothing): sdk install grails 2.4.0
-
-#sudo apt-get install curl
-#doesn't return anything: curl -s get.gvmtool.net | bash
-#gvm install grails 2.4.0
-
 wget https://github.com/grails/grails-core/releases/download/v2.4.0/grails-2.4.0.zip
 sudo unzip grails-2.4.0.zip -d /usr/local/share
