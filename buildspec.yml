@@ -15,7 +15,6 @@ phases:
       - echo Hello, CodeBuild Build!
       - pwd
       - ls
-      - mkdir target
       - /usr/local/share/grails-2.4.0/bin/grails war
      
   post_build:
