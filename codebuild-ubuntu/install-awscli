@@ -1,4 +1,6 @@
-#on ubuntu:
+#CodeBuild's ubuntu comes with awscli automatically, so this file isn't executed by me.
+#
+##on ubuntu:
 sudo apt install python-minimal
 
 
