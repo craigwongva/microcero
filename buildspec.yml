@@ -17,7 +17,7 @@ phases:
       - aws --version
       - java -version
       - ./codebuild-ubuntu/install-grails
-      - grails -version
+#      - grails -version
 
 
 #artifacts:

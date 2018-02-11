@@ -3,7 +3,7 @@ sudo apt install unzip
 unzip dotsdkman-grails.zip
 /bin/bash
 echo hello ladder
-pwd
+MY_HERE=`pwd`
 echo hello picture frame
 
 #sed -i 's/HOME/$1/' codebuild-ubuntu/sdkman-init.sh
@@ -40,3 +40,7 @@ export JAVA_HOME=/usr
 #grails
 
 echo "hey there's kim kardashian"
+cd $MY_HERE
+pwd
+/usr/local/share/grails-2.4.0/bin/grails war
+echo "hey there's frank sinatra"
