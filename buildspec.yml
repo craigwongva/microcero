@@ -7,7 +7,7 @@ phases:
       - pwd
       - ls
 #      - ./codebuild-ubuntu/install-grails
-      - ./install-grails-for-codepipeline
+      - sh install-grails-for-codepipeline
 
   build:
     commands:
