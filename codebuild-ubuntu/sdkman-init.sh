@@ -37,7 +37,8 @@ if [ -z "$SDKMAN_CURRENT_API" ]; then
 fi
 
 if [ -z "$SDKMAN_DIR" ]; then
-        export SDKMAN_DIR="$HOME/.sdkman"
+#craig        export SDKMAN_DIR="$HOME/.sdkman"
+        export SDKMAN_DIR="$1/.sdkman"
 fi
 
 export SDKMAN_CANDIDATES_DIR="${SDKMAN_DIR}/candidates"
