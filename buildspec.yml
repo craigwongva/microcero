@@ -3,12 +3,12 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo Hello, CodeBuild Install!
-      - pwd
-      - ls
+#      - echo Hello, CodeBuild Install!
+#      - pwd
+#      - ls
 #      - ./codebuild-ubuntu/install-grails
-# Use sh instead of dot when running inside CodeBuild Ubuntu:
-      - sh install-grails-for-codepipeline
+# SAve this: Use sh instead of dot when running inside CodeBuild Ubuntu:
+#      - sh install-grails-for-codepipeline
 
   build:
     commands:
