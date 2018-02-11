@@ -1,2 +1,5 @@
+echo hello chile
 wget https://github.com/grails/grails-core/releases/download/v2.4.0/grails-2.4.0.zip
+echo hello peru
 sudo unzip grails-2.4.0.zip -d /usr/local/share
+echo hello paraguay
