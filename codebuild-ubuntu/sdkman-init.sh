@@ -1,4 +1,3 @@
-cat .sdkman/bin/sdkman-init.sh
 #!/bin/bash
 
 #
