@@ -1,19 +1,16 @@
-aws s3 cp s3://redf4rth-root/gocontainer/dotsdkman-grails.zip . 
-sudo apt install unzip
-unzip dotsdkman-grails.zip
-/bin/bash
-echo hello ladder
-MY_HERE=`pwd`
-echo hello picture frame
-
-#sed -i 's/HOME/$1/' codebuild-ubuntu/sdkman-init.sh
-#cat codebuild-ubuntu/sdkman-init.sh
-cp codebuild-ubuntu/sdkman-init.sh .sdkman/bin/
-
-#Use homegrown version of next line, because CodeBuild's ubuntu doesn't grok `#!/bin/bash`
-#. .sdkman/bin/sdkman-init.sh
-echo hello brown pillow
-/bin/bash .sdkman/bin/sdkman-init.sh `pwd`
+#aws s3 cp s3://redf4rth-root/gocontainer/dotsdkman-grails.zip . 
+#sudo apt install unzip
+#unzip dotsdkman-grails.zip
+#MY_HERE=`pwd`
+#
+##sed -i 's/HOME/$1/' codebuild-ubuntu/sdkman-init.sh
+##cat codebuild-ubuntu/sdkman-init.sh
+#cp codebuild-ubuntu/sdkman-init.sh .sdkman/bin/
+#
+##Use homegrown version of next line, because CodeBuild's ubuntu doesn't grok `#!/bin/bash`
+##. .sdkman/bin/sdkman-init.sh
+#echo hello brown pillow
+#/bin/bash .sdkman/bin/sdkman-init.sh `pwd`
 
 #doesn't work on ubuntu (it does nothing): sdk install grails 2.4.0
 
@@ -23,24 +20,3 @@ echo hello brown pillow
 
 wget https://github.com/grails/grails-core/releases/download/v2.4.0/grails-2.4.0.zip
 sudo unzip grails-2.4.0.zip -d /usr/local/share
-#export GRAILS_HOME=/usr/local/share/grails-2.4.0
-#export PATH=$PATH:$GRAILS_HOME/bin
-#cd /usr/local/share/grails-2.4.0/bin
-#ls
-#echo "hey there's melanie griffith"
-#
-#/usr/local/share/grails-2.4.0/bin/grails -version
-#
-##Grails is now runnable here (this was true on Amazon Linux; on Ubuntu this might not work):
-## .sdkman/candidates/grails/2.4.0/bin/grails
-#
-##works on Ubuntu:
-#export JAVA_HOME=/usr
-##Runnable as:
-##grails
-#
-#echo "hey there's kim kardashian"
-#cd $MY_HERE
-#pwd
-#/usr/local/share/grails-2.4.0/bin/grails war
-#echo "hey there's frank sinatra"
