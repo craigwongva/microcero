@@ -5,8 +5,15 @@ unzip dotsdkman-grails.zip
 echo hello ladder
 pwd
 echo hello picture frame
+
+sed -i 's/HOME/`pwd`/' sdkman-init.sh
+cat sdkman-init.sh
+cp sdkman-init.sh .sdkman/bin/
+
+#Use homegrown version of next line, because CodeBuild's ubuntu doesn't grok `#!/bin/bash`
 #. .sdkman/bin/sdkman-init.sh
 /bin/bash .sdkman/bin/sdkman-init.sh
+
 sdk install grails 2.4.0
 
 #Grails is now runnable here (this was true on Amazon Linux; on Ubuntu this might not work):
