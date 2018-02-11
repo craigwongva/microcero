@@ -8,3 +8,4 @@ scripts/_Events.groovy
 conf/BootStrap.groovy 
 
     uses the sha, i.e. println sha, which appears in the Tomcat log
+ 
