@@ -17,9 +17,16 @@ echo hello brown pillow
 
 #doesn't work on ubuntu (it does nothing): sdk install grails 2.4.0
 
-sudo apt-get install curl
-curl -s get.gvmtool.net | bash
-gvm install grails 2.4.0
+#sudo apt-get install curl
+#doesn't return anything: curl -s get.gvmtool.net | bash
+#gvm install grails 2.4.0
+
+wget https://github.com/grails/grails-core/releases/download/v2.4.0/grails-2.4.0.zip
+sudo unzip grails-2.4.0.zip -d /usr/local/share
+export GRAILS_HOME=/usr/local/share/grails-2.4.0
+export PATH=$PATH:$GRAILS_HOME/bin
+
+grails -version
 
 #Grails is now runnable here (this was true on Amazon Linux; on Ubuntu this might not work):
 # .sdkman/candidates/grails/2.4.0/bin/grails
