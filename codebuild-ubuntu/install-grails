@@ -1,4 +1,3 @@
-cd /home/ec2-user
 aws s3 cp s3://redf4rth-root/gocontainer/dotsdkman-grails.zip . 
 sudo apt install unzip
 unzip dotsdkman-grails.zip
