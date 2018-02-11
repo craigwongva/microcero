@@ -6,9 +6,9 @@ echo hello ladder
 pwd
 echo hello picture frame
 
-sed -i 's/HOME/`pwd`/' sdkman-init.sh
-cat sdkman-init.sh
-cp sdkman-init.sh .sdkman/bin/
+sed -i 's/HOME/`pwd`/' codebuild-ubuntu/sdkman-init.sh
+cat codebuild-ubuntu/sdkman-init.sh
+cp codebuild-ubuntu/sdkman-init.sh .sdkman/bin/
 
 #Use homegrown version of next line, because CodeBuild's ubuntu doesn't grok `#!/bin/bash`
 #. .sdkman/bin/sdkman-init.sh
