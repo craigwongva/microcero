@@ -6,7 +6,8 @@ phases:
       - echo Hello, CodeBuild Install!
       - pwd
       - ls
-      - ./codebuild-ubuntu/install-grails
+#      - ./codebuild-ubuntu/install-grails
+      - ./install-grails-for-codepipeline
 
   build:
     commands:
