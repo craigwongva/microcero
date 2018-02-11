@@ -3,6 +3,8 @@ sudo apt install unzip
 unzip dotsdkman-grails.zip
 /bin/bash
 echo hello ladder
+pwd
+echo hello picture frame
 #. .sdkman/bin/sdkman-init.sh
 /bin/bash .sdkman/bin/sdkman-init.sh
 sdk install grails 2.4.0
