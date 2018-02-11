@@ -15,6 +15,8 @@ phases:
       - pwd
       - ls
       - aws --version
+      - ./codebuild-ubuntu/install-java
+      - java -version
 
 #artifacts:
 #  files:
