@@ -26,6 +26,8 @@ sudo unzip grails-2.4.0.zip -d /usr/local/share
 export GRAILS_HOME=/usr/local/share/grails-2.4.0
 export PATH=$PATH:$GRAILS_HOME/bin
 cd /usr/local/share/grails-2.4.0/bin
+ls
+echo "hey there's melanie griffith"
 
 /usr/local/share/grails-2.4.0/bin/grails -version
 
