@@ -17,7 +17,7 @@ phases:
       - ls
 #      - /usr/local/share/grails-2.4.0/bin/grails war ./craig.war > mito
 #      - ls
-       - mvn grails:war
+      - mvn grails:war
     
   post_build:
     commands:
