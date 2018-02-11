@@ -15,7 +15,11 @@ cp codebuild-ubuntu/sdkman-init.sh .sdkman/bin/
 echo hello brown pillow
 /bin/bash .sdkman/bin/sdkman-init.sh `pwd`
 
-sdk install grails 2.4.0
+#doesn't work on ubuntu (it does nothing): sdk install grails 2.4.0
+
+sudo apt-get install curl
+curl -s get.gvmtool.net | bash
+gvm install grails 2.4.0
 
 #Grails is now runnable here (this was true on Amazon Linux; on Ubuntu this might not work):
 # .sdkman/candidates/grails/2.4.0/bin/grails
