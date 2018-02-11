@@ -4,20 +4,18 @@ phases:
   install:
     commands:
       - echo Hello, CodeBuild Install!
+      - ./codebuild-ubuntu/install-grails
+      - pwd
 
   build:
     commands:
       - echo Hello, CodeBuild Build!
+      - pwd
+      - /usr/local/share/grails-2.4.0/bin/grails war
      
   post_build:
     commands:
       - echo Hello, CodeBuild PostBuild!
-      - pwd
-      - ls
-      - aws --version
-      - java -version
-      - ./codebuild-ubuntu/install-grails
-#      - grails -version
 
 
 #artifacts:
