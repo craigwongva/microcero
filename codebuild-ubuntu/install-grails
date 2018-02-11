@@ -23,24 +23,24 @@ echo hello brown pillow
 
 wget https://github.com/grails/grails-core/releases/download/v2.4.0/grails-2.4.0.zip
 sudo unzip grails-2.4.0.zip -d /usr/local/share
-export GRAILS_HOME=/usr/local/share/grails-2.4.0
-export PATH=$PATH:$GRAILS_HOME/bin
-cd /usr/local/share/grails-2.4.0/bin
-ls
-echo "hey there's melanie griffith"
-
-/usr/local/share/grails-2.4.0/bin/grails -version
-
-#Grails is now runnable here (this was true on Amazon Linux; on Ubuntu this might not work):
-# .sdkman/candidates/grails/2.4.0/bin/grails
-
-#works on Ubuntu:
-export JAVA_HOME=/usr
-#Runnable as:
-#grails
-
-echo "hey there's kim kardashian"
-cd $MY_HERE
-pwd
-/usr/local/share/grails-2.4.0/bin/grails war
-echo "hey there's frank sinatra"
+#export GRAILS_HOME=/usr/local/share/grails-2.4.0
+#export PATH=$PATH:$GRAILS_HOME/bin
+#cd /usr/local/share/grails-2.4.0/bin
+#ls
+#echo "hey there's melanie griffith"
+#
+#/usr/local/share/grails-2.4.0/bin/grails -version
+#
+##Grails is now runnable here (this was true on Amazon Linux; on Ubuntu this might not work):
+## .sdkman/candidates/grails/2.4.0/bin/grails
+#
+##works on Ubuntu:
+#export JAVA_HOME=/usr
+##Runnable as:
+##grails
+#
+#echo "hey there's kim kardashian"
+#cd $MY_HERE
+#pwd
+#/usr/local/share/grails-2.4.0/bin/grails war
+#echo "hey there's frank sinatra"
