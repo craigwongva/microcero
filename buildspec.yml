@@ -7,12 +7,15 @@ phases:
       - pwd
       - ls
 #      - ./codebuild-ubuntu/install-grails
+# Use sh instead of dot when running inside CodeBuild Ubuntu:
       - sh install-grails-for-codepipeline
 
   build:
     commands:
       - echo Hello, CodeBuild Build!
       - pwd
+      - ls
+      - mkdir target
       - /usr/local/share/grails-2.4.0/bin/grails war
      
   post_build:
