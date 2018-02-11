@@ -12,6 +12,7 @@ cp codebuild-ubuntu/sdkman-init.sh .sdkman/bin/
 
 #Use homegrown version of next line, because CodeBuild's ubuntu doesn't grok `#!/bin/bash`
 #. .sdkman/bin/sdkman-init.sh
+echo hello brown pillow
 /bin/bash .sdkman/bin/sdkman-init.sh `pwd`
 
 sdk install grails 2.4.0

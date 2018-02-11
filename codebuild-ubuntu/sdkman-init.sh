@@ -35,11 +35,13 @@ fi
 if [ -z "$SDKMAN_CURRENT_API" ]; then
         export SDKMAN_CURRENT_API="https://api.sdkman.io/2"
 fi
-
+echo "hey there is tom cruise"
 if [ -z "$SDKMAN_DIR" ]; then
 #craig        export SDKMAN_DIR="$HOME/.sdkman"
         export SDKMAN_DIR="$1/.sdkman"
+        echo $SDKMAN_DIR
 fi
+echo "hey there is nicole kidman"
 
 export SDKMAN_CANDIDATES_DIR="${SDKMAN_DIR}/candidates"
 
