@@ -3,6 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
+      - lsb_release -a
       - nohup /usr/local/bin/dockerd --host=unix:///var/run/docker.sock --host=tcp://0.0.0.0:2375 --storage-driver=overlay&
       - timeout -t 15 sh -c "until docker info; do echo .; sleep 1; done"
   pre_build:
