@@ -1,4 +1,12 @@
 TMP=/tmp/install-grails
+
+##
+# Install Java
+##
+
+sudo yum install java-1.7.0-openjdk-devel -y                > $TMP-1000 2>&1
+export JAVA_HOME=/usr/lib/jvm/java                          > $TMP-1100 2>&1
+
 cd /home/ec2-user                                           > $TMP-1200 2>&1
 aws s3 cp s3://redf4rth-root/gocontainer/dotsdkman-grails.zip . > $TMP-1210 2>&1
 unzip dotsdkman-grails.zip                                  > $TMP-1220 2>&1
