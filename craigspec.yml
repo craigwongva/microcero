@@ -18,8 +18,9 @@ phases:
 #      - /usr/local/share/grails-2.4.0/bin/grails war ./craig.war > mito
 #      - ls
 #failed 6:53pm      - mvn grails:war
-      - mvn clean
-    
+#succeeded 2/13 11pm      - mvn clean
+      - mvn grails:war
+      
 #  post_build:
 #    commands:
 #      - echo Hello, CodeBuild PostBuild!
