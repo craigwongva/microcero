@@ -15,10 +15,10 @@ phases:
       - echo Hello, CodeBuild Build!
       - pwd
       - ls
-#      - /usr/local/share/grails-2.4.0/bin/grails war ./craig.war > mito
+      - /usr/local/share/grails-2.4.0/bin/grails war #./craig.war > mito
 #      - ls
 #failed 6:53pm      - mvn grails:war
-      - mvn clean
+#why did I switch to mvn from grails?      - mvn clean
     
 #  post_build:
 #    commands:
