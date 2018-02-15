@@ -25,7 +25,7 @@ phases:
 #      - mvn grails:war
       - /usr/local/share/grails-2.4.0/bin/grails create-app Poder  
       - pwd
-      - cd poder
+      - cd Poder
       - /usr/local/share/grails-2.4.0/bin/grails run-app 
 #  post_build:
 #    commands:
