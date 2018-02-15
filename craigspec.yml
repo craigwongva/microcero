@@ -20,10 +20,10 @@ phases:
 #because 'WAR packaging error' but not much helpful debug info
 #When I exec a container, I can clone /microcero and
 #successfully /usr/local/share/grails-2.4.0/bin/grails war
-      - export JAVA_HOME=/usr/lib/jvm/java
-      - mvn --version
-      - mvn grails:war
-      
+#      - export JAVA_HOME=/usr/lib/jvm/java
+#      - mvn --version
+#      - mvn grails:war
+      - /usr/local/share/grails-2.4.0/bin/grails create-app Poder      
 #  post_build:
 #    commands:
 #      - echo Hello, CodeBuild PostBuild!
