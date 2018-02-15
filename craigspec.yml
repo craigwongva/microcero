@@ -23,7 +23,10 @@ phases:
 #      - export JAVA_HOME=/usr/lib/jvm/java
 #      - mvn --version
 #      - mvn grails:war
-      - /usr/local/share/grails-2.4.0/bin/grails create-app Poder      
+      - /usr/local/share/grails-2.4.0/bin/grails create-app Poder  
+      - pwd
+      - cd poder
+      - /usr/local/share/grails-2.4.0/bin/grails run-app 
 #  post_build:
 #    commands:
 #      - echo Hello, CodeBuild PostBuild!
