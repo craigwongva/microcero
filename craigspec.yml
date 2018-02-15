@@ -20,7 +20,7 @@ phases:
 #because 'WAR packaging error' but not much helpful debug info
 #When I exec a container, I can clone /microcero and
 #successfully /usr/local/share/grails-2.4.0/bin/grails war
-
+      - mvn --version
       - mvn grails:war
       
 #  post_build:
