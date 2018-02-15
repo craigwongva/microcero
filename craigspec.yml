@@ -26,7 +26,7 @@ phases:
       - /usr/local/share/grails-2.4.0/bin/grails create-app Poder  
       - pwd
       - cd Poder
-      - /usr/local/share/grails-2.4.0/bin/grails run-app 
+      - /usr/local/share/grails-2.4.0/bin/grails war 
 #  post_build:
 #    commands:
 #      - echo Hello, CodeBuild PostBuild!
