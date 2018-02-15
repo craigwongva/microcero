@@ -16,10 +16,9 @@ phases:
       - pwd
       - ls
       - /usr/local/share/grails-2.4.0/bin/grails war #./craig.war > mito
-#      - ls
-#failed 6:53pm      - mvn grails:war
 #why did I switch to mvn from grails?      - mvn clean
-    
+#      - mvn grails:war
+      
 #  post_build:
 #    commands:
 #      - echo Hello, CodeBuild PostBuild!
