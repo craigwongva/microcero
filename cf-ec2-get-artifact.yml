@@ -2,6 +2,8 @@ AWSTemplateFormatVersion: "2010-09-09"
 Parameters:
 #  githubpassword:
 #    Type: String
+  ObjectKey:
+    Type: String
   BucketName:
     Type: String
 Resources:
@@ -27,7 +29,7 @@ Resources:
 #              - "sudo -u ec2-user bash -c 'cd /home/ec2-user; git clone -b three https://craigwongva:"
               - "echo no odia3 " 
 #              - Ref: githubpassword
-              - " preguntO "
+              - " pregunta "
               - Ref: BucketName              
               - " > /tmp/odia \n"
 #              - "@github.com/craigwongva/saynext.git > /tmp/u10 2>&1 '\n"
