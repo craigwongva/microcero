@@ -35,5 +35,5 @@ phases:
 
 artifacts:
   files:
-    - target/xxxxxxxPoder-0.1.war
-
+#    - target/xxxxxxxPoder-0.1.war
+    - Poder/target/Poder-0.1.war
