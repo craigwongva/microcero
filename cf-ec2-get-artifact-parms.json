@@ -1,10 +1,37 @@
-[
+#The following is valid when running manually:
+#[
+#  {
+#    "ParameterKey": "BucketName",
+#    "ParameterValue": "ThaliaBucketName"
+#  },
+#  {
+#    "ParameterKey": "githubpassword",
+#    "ParameterValue": "Thaliagithubpassword"
+#  }  
+#]
+
+#The following might be valid when running inside CodePipeline:
+{
+  "Parameters" : 
   {
     "ParameterKey": "BucketName",
-    "ParameterValue": "ThaliaBucketName"
+    "ParameterValue": "EmilyBucketName"
   },
   {
     "ParameterKey": "githubpassword",
-    "ParameterValue": "Thaliagithubpassword"
-  }  
-]
+    "ParameterValue": "Emilygithubpassword"
+  }
+  "Tags" : {
+    "Department" : "Marketing"
+  },
+  "StackPolicy" : {
+    "Statement" : [
+      {
+        "Effect" : "Allow",
+        "NotAction" : "Update:Delete",
+        "Principal": "*",
+        "Resource" : "*"
+      }
+    ]
+  }
+}
