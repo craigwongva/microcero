@@ -25,14 +25,15 @@ Resources:
             - ""
             -
               - "#!/bin/bash -ex\n"
-#              - "yum install git -y\n"
-#              - "sudo -u ec2-user bash -c 'cd /home/ec2-user; git clone -b three https://craigwongva:"
-              - "echo no odia3 " 
-#              - Ref: githubpassword
-              - " pregunta "
+              - "yum install git -y\n"
+              - "sudo -u ec2-user bash -c 'cd /home/ec2-user; git clone https://craigwongva/microcero\n"
+              - "cd microcero\n"
+              - "./install-tomcat\n"
+              - "sleep 60"
+              - "aws s3 cp "
               - Ref: BucketName
-              - " respuesta "
+              - "/"
               - Ref: ObjectKey
-              - " > /tmp/odia \n"
-#              - "@github.com/craigwongva/saynext.git > /tmp/u10 2>&1 '\n"
-#              - "sudo -u ec2-user bash -c '/home/ec2-user/saynext/userdata > /tmp/u20 2>&1'\n"            
+              - " ./mywar.zip\n"
+              - "unzip mywar.zip\n"
+              - "cp Poder-0.1.war /usr/share/tomcat7/webapps/Poder.war\n"
