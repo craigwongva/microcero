@@ -26,14 +26,9 @@ Resources:
             -
               - "#!/bin/bash -ex\n"
               - "yum install git -y\n"
-              - "sudo -u ec2-user bash -c 'cd /home/ec2-user; git clone https://craigwongva/microcero\n"
-              - "cd microcero\n"
-              - "./install-tomcat\n"
-              - "sleep 60"
-              - "aws s3 cp "
-              - Ref: BucketName
+              - "sudo -u ec2-user bash -c 'cd /home/ec2-user; git clone https://craigwongva/microcero'\n"
+              - "sudo -u ec2-user bash -c 'cd /home/ec2-user/microcero; ./userdata-deploy "
+              - Ref: BucketName 
               - "/"
               - Ref: ObjectKey
-              - " ./mywar.zip\n"
-              - "unzip mywar.zip\n"
-              - "cp Poder-0.1.war /usr/share/tomcat7/webapps/Poder.war\n"
+              - "'\n"

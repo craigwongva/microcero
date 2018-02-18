@@ -1,0 +1,6 @@
+cd /home/ec2-user/microcero
+./install-tomcat
+sleep 60
+aws s3 cp $1 ./mywar.zip
+unzip mywar.zip
+cp Poder-0.1.war /usr/share/tomcat7/webapps/Poder.war
