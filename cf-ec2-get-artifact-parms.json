@@ -2,7 +2,7 @@
   "Parameters" : 
   {
     "ObjectKey":   "EmilyObjectKey",
-    "BucketName" : { "Fn::GetArtifactAtt" : ["BagArtifact", "BucketName"]},
+    "BucketName" : { "Fn::GetArtifactAtt" : ["BagArtifact", "BucketName"]}
   },
   "Tags" : {
     "Department" : "Marketing"
