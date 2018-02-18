@@ -32,8 +32,7 @@ phases:
 #      - echo Hello, CodeBuild PostBuild!
 #      - ls
 
-
+#    - target/xxxxxxxPoder-0.1.war
 artifacts:
   files:
-#    - target/xxxxxxxPoder-0.1.war
     - Poder/target/Poder-0.1.war
