@@ -1,6 +1,7 @@
 {
   "Parameters" : 
   {
+    "ObjectKey":   "EmilyObjectKey",
     "BucketName" : "EmilyBucketName"
   },
   "Tags" : {
