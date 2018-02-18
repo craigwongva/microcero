@@ -1,26 +1,8 @@
-#The following is valid when running manually:
-#[
-#  {
-#    "ParameterKey": "BucketName",
-#    "ParameterValue": "ThaliaBucketName"
-#  },
-#  {
-#    "ParameterKey": "githubpassword",
-#    "ParameterValue": "Thaliagithubpassword"
-#  }  
-#]
-
-#The following might be valid when running inside CodePipeline:
 {
   "Parameters" : 
   {
-    "ParameterKey": "BucketName",
-    "ParameterValue": "EmilyBucketName"
+    "BucketName" : "EmilyBucketName"
   },
-  {
-    "ParameterKey": "githubpassword",
-    "ParameterValue": "Emilygithubpassword"
-  }
   "Tags" : {
     "Department" : "Marketing"
   },
