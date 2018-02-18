@@ -1,7 +1,7 @@
 {
   "Parameters" : 
   {
-    "ObjectKey":   "EmilyObjectKey",
+    "ObjectKey":   { "Fn::GetArtifactAtt" : ["BagArtifact", "ObjectKey"]},
     "BucketName" : { "Fn::GetArtifactAtt" : ["BagArtifact", "BucketName"]}
   },
   "Tags" : {

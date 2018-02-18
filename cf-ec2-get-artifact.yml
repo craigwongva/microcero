@@ -30,7 +30,9 @@ Resources:
               - "echo no odia3 " 
 #              - Ref: githubpassword
               - " pregunta "
-              - Ref: BucketName              
+              - Ref: BucketName
+              - " respuesta "
+              - Ref: ObjectKey
               - " > /tmp/odia \n"
 #              - "@github.com/craigwongva/saynext.git > /tmp/u10 2>&1 '\n"
 #              - "sudo -u ec2-user bash -c '/home/ec2-user/saynext/userdata > /tmp/u20 2>&1'\n"            
