@@ -33,7 +33,7 @@ phases:
 #      - ls
 
 
-#artifacts:
-#  files:
-#    - target/microcero-0.1.war
+artifacts:
+  files:
+    - target/Poder-0.1.war
 
