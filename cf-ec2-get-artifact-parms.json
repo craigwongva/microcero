@@ -1,0 +1,10 @@
+[
+  {
+    "ParameterKey": "BucketName",
+    "ParameterValue": "ThaliaBucketName"
+  },
+  {
+    "ParameterKey": "githubpassword",
+    "ParameterValue": "Thaliagithubpassword"
+  }  
+]
