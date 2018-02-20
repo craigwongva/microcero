@@ -34,7 +34,8 @@ phases:
       - echo Hello, CodeBuild PostBuild!
       - pwd
       - cd ~
-      - sudo yum install git -y
+      - pwd
+      - yum install git -y
       - git clone https://github.com/craigwongva/microqoder
       - cd microqoder
       - /usr/local/share/grails-2.4.0/bin/grails war
