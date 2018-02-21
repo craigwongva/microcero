@@ -33,7 +33,8 @@ phases:
     commands:
       - echo Hello, CodeBuild PostBuild!
       - pwd
-      - cd ~
+#messes up dir: it's too /root      - cd ~
+      - cd ..
       - pwd
       - yum install git -y
       - git clone https://github.com/craigwongva/microqoder
@@ -45,6 +46,6 @@ phases:
 artifacts:
   files:
 #works:    - Poder/target/Poder-0.1.war
-#fails:    - microqoder/target/Qoder-0.1.war
-    - target/Qoder-0.1.war
+    - microqoder/target/Qoder-0.1.war
+
   discard-paths: yes    
