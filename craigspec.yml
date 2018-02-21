@@ -39,10 +39,12 @@ phases:
       - git clone https://github.com/craigwongva/microqoder
       - cd microqoder
       - /usr/local/share/grails-2.4.0/bin/grails war
+      - pwd
 
 
 artifacts:
   files:
-#    - Poder/target/Poder-0.1.war
-    - microqoder/target/Qoder-0.1.war    
+#works:    - Poder/target/Poder-0.1.war
+#fails:    - microqoder/target/Qoder-0.1.war
+    - target/Qoder-0.1.war
   discard-paths: yes    
