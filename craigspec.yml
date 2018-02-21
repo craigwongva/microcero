@@ -40,11 +40,9 @@ phases:
       - cd microqoder
       - /usr/local/share/grails-2.4.0/bin/grails war
 
-#    - target/xxxxxxxPoder-0.1.war
-#artifacts:
-#  files:
-#    - Poder/target/Poder-0.1.war
+
 artifacts:
   files:
-    - Poder/target/Poder-0.1.war
+#    - Poder/target/Poder-0.1.war
+    - microqoder/target/Qoder-0.1.war    
   discard-paths: yes    
