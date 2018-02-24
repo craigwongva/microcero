@@ -1,1 +1,9 @@
-echo "snoopy is a dog"
+echo 0
+sudo yum install -y awslogs
+echo 1
+cd microcero
+echo 2
+sudo service awslogs start
+echo 3
+sudo service awslogs status
+echo 4
