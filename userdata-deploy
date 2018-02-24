@@ -1,13 +1,14 @@
 cd /home/ec2-user/microcero
 
 #sudo yum update -y
-sudo yum install -y awslogs
+
 #curl https://s3.amazonaws.com/aws-cloudwatch/downloads/latest/awslogs-agent-setup.py -O
 #sudo python ./awslogs-agent-setup.py --region us-west-2
 aws s3 cp s3://redf4rth-microcero/france.zip .
 unzip france.zip
 sudo mv awslogs /var/
 sudo cp awslogs.conf /var/awslogs/etc/
+sudo yum install -y awslogs
 sudo service awslogs restart
 
 cd /home/ec2-user/microcero
