@@ -5,6 +5,8 @@ cd /home/ec2-user/microcero
 echo 20
 sudo cp awscli.conf /etc/awslogs/
 echo 22
+sudo cp awslogs.conf /etc/awslogs/
+echo 24
 sudo service awslogs start
 echo 30
 sudo service awslogs status
