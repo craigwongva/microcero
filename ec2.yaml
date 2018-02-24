@@ -1,0 +1,24 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Resources:
+  InstanceSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: InstanceSecurityGroupDescription
+  Server:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: "ami-7172b611"
+      InstanceType: "t2.micro"
+      KeyName: oregonkeypair
+      IamInstanceProfile: RoleForTestingRoles
+      SecurityGroupIds:
+      - !Ref InstanceSecurityGroup
+      UserData:
+        Fn::Base64:
+          Fn::Join:
+            - ""
+            -
+              - "#!/bin/bash -ex\n"
+              - "yum install git -y\n"
+              - "sudo -u ec2-user bash -c 'cd /home/ec2-user; git clone https://github.com/craigwongva/microcero.git '\n"
+              - "sudo -u ec2-user bash -c '/home/ec2-user/microcero/snoopy > /tmp/snoopy'\n"            
