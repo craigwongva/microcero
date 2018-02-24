@@ -21,4 +21,8 @@ Resources:
               - "#!/bin/bash -ex\n"
               - "yum install git -y\n"
               - "sudo -u ec2-user bash -c 'cd /home/ec2-user; git clone https://github.com/craigwongva/microcero.git '\n"
-              - "sudo -u ec2-user bash -c '/home/ec2-user/microcero/snoopy > /tmp/snoopy'\n"            
+              - "sudo -u ec2-user bash -c '/home/ec2-user/microcero/snoopy > /tmp/snoopy'\n"
+Outputs:
+  InstanceID:
+    Description: "PublicIp"
+    Value: !GetAtt Server.PublicIp
