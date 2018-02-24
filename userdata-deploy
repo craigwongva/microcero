@@ -1,3 +1,9 @@
+#sudo yum update -y
+sudo yum install -y awslogs
+#curl https://s3.amazonaws.com/aws-cloudwatch/downloads/latest/awslogs-agent-setup.py -O
+sudo cp awslogs.conf /var/awslogs/etc/
+sudo service awslogs restart
+
 cd /home/ec2-user/microcero
 ./install-tomcat
 sleep 60
@@ -10,3 +16,4 @@ sudo cp Qoder-0.1.war /usr/share/tomcat7/webapps/Qoder.war
 #To verify:
 # sudo tail -f /var/log/tomcat7/catalina.out
 # http://x.x.x.X:8080/Poder
+
