@@ -4,6 +4,12 @@ Resources:
     Type: AWS::EC2::SecurityGroup
     Properties:
       GroupDescription: InstanceSecurityGroupDescription
+      SecurityGroupIngress: 
+        - 
+          IpProtocol: "tcp"
+          FromPort: "22"
+          ToPort: "22"
+          CidrIp: "0.0.0.0/0"
   Server:
     Type: AWS::EC2::Instance
     Properties:

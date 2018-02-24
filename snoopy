@@ -1,7 +1,7 @@
 echo  0
 sudo yum install -y awslogs
 echo 10
-cd microcero
+cd /home/ec2-user/microcero
 echo 20
 sudo cp awscli.conf /etc/awslogs/
 echo 22
