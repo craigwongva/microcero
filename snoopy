@@ -5,7 +5,8 @@ cd /home/ec2-user/microcero
 echo 20
 sudo cp awscli.conf /etc/awslogs/
 echo 22
-sudo cp awslogs.conf /etc/awslogs/
+#causes awslogs/python? to not work: sudo cp awslogs.conf /etc/awslogs/
+sudo sed -i "s/log_group_name = .*$/log_group_name = oveja/" /etc/awslogs/awslogs.conf 
 echo 24
 sudo service awslogs start
 echo 30
