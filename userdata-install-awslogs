@@ -10,15 +10,3 @@ sudo sed -i "s#/var/log/messages#/usr/share/tomcat7/logs/catalina.out#" /etc/aws
 sudo sed -i "s/log_group_name = .*$/log_group_name = oveja/" /etc/awslogs/awslogs.conf
 sudo service awslogs start
 
-cd /home/ec2-user/microcero
-./install-tomcat
-sleep 60
-aws configure set s3.signature_version s3v4   #required for KMS encrypted objects
-aws s3 cp s3://$1 mywar.zip --region us-west-2
-unzip mywar.zip
-sudo cp Qoder-0.1.war /usr/share/tomcat7/webapps/Qoder.war
-
-#To verify:
-# sudo tail -f /var/log/tomcat7/catalina.out
-# http://x.x.x.X:8080/Poder
-
